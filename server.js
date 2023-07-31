@@ -10,6 +10,8 @@ const app = express();
 app.use(cors());
 app.use(bp.json());
 
+const Book = require("./models/book");
+
 const PORT = process.env.PORT || 3001;
 
 app.get("/test", (request, response) => {
