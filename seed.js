@@ -14,6 +14,13 @@ async function seed() {
     description: "a realistic adventure",
     status: "available",
   });
+
+  await Book.create({
+    title: "ABC JaaScript",
+    description: "Java script ",
+    status: "available",
+  });
+
   console.log("yippy done it");
   mongoose.disconnect();
 }
